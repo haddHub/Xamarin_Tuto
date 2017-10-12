@@ -19,16 +19,20 @@ XAML COMPILATION :
 - Pour l'activer : [assembly: XamlCompilation(XamlCompilationOptions.Compile)] dans Prop -> assemblyInfo.cs
 
 # 3.Layouts
+
 STACKLAYOUT :
 - Rien de nouveau.
+
 GRID :
 - De base la grid "fill" le container. Idem pour les elements dans une cellule.
 - On peut modifier l'espace de base entre les lignes et colonne avec RowSpacing et ColumnSpacing.
 - ColumnSpan ou RowSpan pour définir combien de ligne ou colonne l'éléménet va prendre.
 - Grid.RowDefinition etc...
+
 ABSOLUTELAYOUT :
 - De base "fill" le container
 - Plus de control sur le positionement, ou pour ancrer des element a certains endroit de l'écran.
+
 RELATIVELAYOUT :
 - On peut definir la position d'un élément par rapport a un autre
 
