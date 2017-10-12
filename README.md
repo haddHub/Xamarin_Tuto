@@ -36,3 +36,20 @@ ABSOLUTELAYOUT :
 RELATIVELAYOUT :
 - On peut definir la position d'un élément par rapport a un autre
 
+# 4.Images
+
+- Deux types de sources. Les images shared (background etc...) et les platform spécifique (icon, splash screen...).
+- Aspect de l'image. Fill Fit etc...
+
+IMAGES DOWNLOAD :
+- De base une image est dl et stocke en cache pendant 24h. Pour désactiver ca, on est obligé de passer par le code behind.
+- ActivityIndicator. Image a IsLoading
+
+EMBEDDED IMAGE :
+- Changer dans les proprietes : Ressource incorporée
+- De base on ne peut pas utiliser une ressource incorporée en XAML. Code behind ou custom markup (fait dans l'exemple).
+
+PLATFORM SPECIFIC :
+- Les platform on des conventions différentes.
+- Les images platform spécifique sont appelée facilement. Image="clock.png" (si l'image est placée correctement en fonction de la convention)
+
