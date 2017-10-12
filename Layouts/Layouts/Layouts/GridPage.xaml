@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layouts.GridPage">
+    <Grid BackgroundColor="Yellow">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Text="Label 1" Grid.Row="0" Grid.Column="0" BackgroundColor="Silver"/>
+        <Label Text="Label 2" Grid.Row="0" Grid.Column="1" BackgroundColor="Silver"/>
+        <Label Text="Label 3" Grid.Row="1" Grid.Column="0" BackgroundColor="Silver"/>
+        <Label Text="Label 4" Grid.Row="1" Grid.Column="1" BackgroundColor="Silver"/>
+        <Label Text="Columnspan" Grid.Row="2" Grid.ColumnSpan="3" BackgroundColor="Silver"/>
+        <Label Text="Rowspan" Grid.Column="2" Grid.RowSpan="3" BackgroundColor="Silver"/>
+    </Grid>
+</ContentPage>
