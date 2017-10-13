@@ -53,3 +53,9 @@ PLATFORM SPECIFIC :
 - Les platform on des conventions différentes.
 - Les images platform spécifique sont appelée facilement. Image="clock.png" (si l'image est placée correctement en fonction de la convention)
 
+# 5.Lists
+- SeparatorVisiblity et Color
+- ItemTemplate -> DataTemplate -> TextCell ou ImageCell, sont les tempaltes de base
+- ""                 ""           ViewCell, est le custom template dans lequel on peut mettre n'importe quel layout
+- HasUnevenRows
+
