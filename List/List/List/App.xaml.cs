@@ -13,7 +13,7 @@ namespace List
         {
             InitializeComponent();
 
-            MainPage = new List.CustomTemplatePage();
+            MainPage = new List.ContextAction();
         }
 
         protected override void OnStart()

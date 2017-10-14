@@ -58,4 +58,22 @@ PLATFORM SPECIFIC :
 - ItemTemplate -> DataTemplate -> TextCell ou ImageCell, sont les tempaltes de base
 - ""                 ""           ViewCell, est le custom template dans lequel on peut mettre n'importe quel layout
 - HasUnevenRows
+- Groupeage disponible grace au GroupDisplayBinding et la creation d'une classe spécifique qui hérite de List<X>.
+- ItemTapped : Le tapped peut etre activé a chaque fois qu'on tap un item mais si il est deja seclectionné 
+- ItemSelected : Item selectionné n'apparait que si l'item n'est pas encore selectionné
+- Pour désactiver la séléction : Dans le ItemSelected mettre list.SelectedItem = null et ne pas gere le tapped event.
+
+CONTEXT ACTION :
+- <ContextAction> prop dans la quelle on peut mettre des MenuItem avec le clicked event a gerer.
+- IsDestructive true pour faire apparaitre l'item en rouge
+- CommandParameter="{Binding .}" pour passer du menu item au "contact".
+- OBSERVABLECOLLECTION
+
+PULL REFRESH :
+- IsPullToRefreshEnabled à true et gerer l'event Refreshing
+- A la fin de l'event call EndRefresh sur la listView
+
+SHEARCH BAR :
+- TextChangedEvent ou ButtonPressed.
+- Filtrer la liste en fonction du text recu et l'appliquer a mon ItemsSource
 

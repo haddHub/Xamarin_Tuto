@@ -4,7 +4,9 @@
              x:Class="List.CustomTemplatePage">
     <ListView x:Name="MyList" HasUnevenRows="True" IsGroupingEnabled="True"
               GroupDisplayBinding="{Binding Title}"
-              GroupShortNameBinding="{Binding ShortTitle}">
+              GroupShortNameBinding="{Binding ShortTitle}"
+              ItemTapped="MyList_ItemTapped"
+              ItemSelected="MyList_ItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>

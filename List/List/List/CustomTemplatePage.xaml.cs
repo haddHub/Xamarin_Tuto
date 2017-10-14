@@ -30,5 +30,17 @@ namespace List
                 }
             };
         }
+
+        private void MyList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var contact = e.Item as Contact;
+            DisplayAlert("Tapped", contact.Name, "OK");
+        }
+
+        private void MyList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var contact = e.SelectedItem as Contact;
+            DisplayAlert("Selected", contact.Name, "OK");
+        }
     }
 }
