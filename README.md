@@ -54,6 +54,7 @@ PLATFORM SPECIFIC :
 - Les images platform spécifique sont appelée facilement. Image="clock.png" (si l'image est placée correctement en fonction de la convention)
 
 # 5.Lists
+
 - SeparatorVisiblity et Color
 - ItemTemplate -> DataTemplate -> TextCell ou ImageCell, sont les tempaltes de base
 - ""                 ""           ViewCell, est le custom template dans lequel on peut mettre n'importe quel layout
@@ -77,3 +78,22 @@ SHEARCH BAR :
 - TextChangedEvent ou ButtonPressed.
 - Filtrer la liste en fonction du text recu et l'appliquer a mon ItemsSource
 
+# 6.Navigation
+
+HIERARCHICAL NAVIGATION
+- Fonctionne sur un system de stack. Les page sont empillée les une sur les autre et on peut revenir de 1 en arrière.
+- Navigation.PushAsync pour naviger vers une autre page
+- Navigation.PopAsync pour revenir une page en arrière.
+- Dans app.xaml, la main page doit etre l'argument d'une NavigationPage. MainPage = new NavigationPage(new MyPage());
+- Pour cacher la barre de navigation : NavigationPage.HasNavigationBar="False"
+- Pour changer la couleur de la barre, c'est dans le app.xaml.cs au moment de l'init de MainPage. NavigationPage a des prop
+
+MODAL PAGE
+- N'affiche pas la barre de navigation pour forcer l'utilisateur a faire une action sur la page.
+- Remplacer le PushAsync par PushModalAsync
+- PopModalAsync
+- Overrider le OnBackButtonPressed event pour forcer a utiliser notre boutton.
+
+MASTER DETAILS
+- Gerer l'event de selection d'item et pushAsync vers la page de details.
+- Passer a la page de detial le contact
